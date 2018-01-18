@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  cheese.web:
+    image: cheese.web
+    build:
+      context: .
+      dockerfile: Cheese.Web/Dockerfile
+
+  identityserverwithaspnetidentity:
+    image: identityserverwithaspnetidentity
+    build:
+      context: .
+      dockerfile: IdentityServerWithAspNetIdentity/Dockerfile
+

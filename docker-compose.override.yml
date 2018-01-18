@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  cheese.web:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80"
+
+  identityserverwithaspnetidentity:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80"
+
