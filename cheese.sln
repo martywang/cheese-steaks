@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServerWithAspNetIdentity", "IdentityServerWithAspNetIdentity\IdentityServerWithAspNetIdentity.csproj", "{27EA9AB0-8258-457A-9BFF-2F5977F7A2CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cheese.Web", "Cheese.Web\Cheese.Web.csproj", "{EE51B024-BB1F-434A-BB9A-903E95EC9840}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27EA9AB0-8258-457A-9BFF-2F5977F7A2CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27EA9AB0-8258-457A-9BFF-2F5977F7A2CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27EA9AB0-8258-457A-9BFF-2F5977F7A2CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27EA9AB0-8258-457A-9BFF-2F5977F7A2CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE51B024-BB1F-434A-BB9A-903E95EC9840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE51B024-BB1F-434A-BB9A-903E95EC9840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE51B024-BB1F-434A-BB9A-903E95EC9840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE51B024-BB1F-434A-BB9A-903E95EC9840}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C8FC3B1-2CCD-4EF1-8D2F-CBC37928E887}
+	EndGlobalSection
+EndGlobal
