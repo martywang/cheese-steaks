@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Cheese.Web.Data;
+using IdentityServer4.AccessTokenValidation;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -25,6 +26,17 @@ namespace Cheese.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+			//Setup for IdentityServer
+			services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
+					.AddIdentityServerAuthentication(options =>
+					{
+						options.Authority = "http://localhost:5000";
+						options.RequireHttpsMetadata = false;
+
+						options.ApiName = "api1";
+						options.ApiSecret = "secret";
+					});
+
 			services.AddSingleton<CosmosDbClient>();
             services.AddMvc();
 
