@@ -23,6 +23,16 @@
                     </a>
                 </li>
                 <li [routerLinkActive]='["link-active"]'>
+                    <a [routerLink]='["/add-favorite"]' (click)='collapse()'>
+                        <span class='glyphicon glyphicon-education'></span> Add Favorite
+                    </a>
+                </li>
+                <li [routerLinkActive]='["link-active"]'>
+                    <a [routerLink]='["/list-favorite"]' (click)='collapse()'>
+                        <span class='glyphicon glyphicon-education'></span> My Favorites
+                    </a>
+                </li>
+                <li [routerLinkActive]='["link-active"]'>
                     <a [routerLink]='["/fetch-data"]' (click)='collapse()'>
                         <span class='glyphicon glyphicon-th-list'></span> Fetch data
                     </a>

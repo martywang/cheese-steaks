@@ -38,12 +38,10 @@ namespace Cheese.Web.Data
 		}
 
 		public async Task<List<Favorite>> GetFavoritesByUser(Guid userId)
-		{
-			// Set some common query options
+		{			
 			FeedOptions queryOptions = new FeedOptions { MaxItemCount = -1 };
 			var results = new List<Favorite>();
-
-			// Here we find the Andersen family via its LastName
+						
 			using (var favQuery = Client.CreateDocumentQuery<Favorite>(
 					UriFactory.CreateDocumentCollectionUri(DbName, FavTableName), queryOptions)
 					.Where(f => f.User.Id == userId)
